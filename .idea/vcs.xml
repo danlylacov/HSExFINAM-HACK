@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Frontend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/collector-of-all-data" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/market-analyzer-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/news_analise_final" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/price-forecast-back" vcs="Git" />
+  </component>
+</project>
