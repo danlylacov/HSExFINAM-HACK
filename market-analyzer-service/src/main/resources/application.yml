@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: market-analyzer-service
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+services:
+  collector: http://localhost:8087/api/v1/callbacks/candles
+

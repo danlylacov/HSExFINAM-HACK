@@ -1,0 +1,27 @@
+server:
+  port: 8087
+  callback:
+    base-url: http://127.0.0.1:8087
+    news-path: /api/v1/callbacks/news
+    candle-path: /api/v1/callbacks/candles
+    prediction-path: /api/v1/callbacks/prediction
+
+spring:
+  application:
+    name: collector-of-all-data
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+services:
+  python:
+    news-processor:
+      url: http://188.225.74.138:8000/infer
+    price-predictor:
+      url: http://python-prediction-service:5000/api/predict
+  spring:
+    candle-enricher:
+      url: http://127.0.0.1:8081/candle
+  frontend:
+    url: http://frontend:3000
