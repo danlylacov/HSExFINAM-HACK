@@ -6,10 +6,10 @@ __Решение кейса Forecast__ - прогнозирование коти
 __Команда Back2Back__
 
 __Состав:__
-- Лулаков Даниил - Dev-ops, Fullstack, ML
+- Лулаков Даниил - Dev-ops, Fullstack, ML [[Finalist certificate]](https://github.com/danlylacov/HSExFINAM-HACK/blob/main/06CSZ9XGAFKVWSF0SP7WNCSX2G.pdf)
 - Гезенцвей Виктор - Back-end
 - Беляев Валенрий - ML
- - Сорокина Апполинария - ML
+- Сорокина Апполинария - ML
 
 
 __Презентация:__  [click](https://github.com/danlylacov/HSExFINAM-HACK/blob/main/finam-hack.pdf)
