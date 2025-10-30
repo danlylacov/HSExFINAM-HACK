@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -31,13 +32,14 @@ public class FileUploadController {
                     @ApiResponse(responseCode = "400", description = "Ошибка валидации файлов", content = @Content)
             }
     )
-    @PostMapping("/upload")
+    @PostMapping(value = "/upload", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Map<String, String>> uploadFiles(
             @Parameter(description = "CSV-файл с новостями", required = true)
             @RequestPart("newsFile") MultipartFile newsFile,
 
             @Parameter(description = "CSV-файл с данными свечей", required = true)
-            @RequestPart("candleFile") MultipartFile candleFile) {
+            @RequestPart("candleFile") MultipartFile candleFile
+    ) {
 
         log.info("Received file upload request: newsFile={}, candleFile={}",
                 newsFile.getOriginalFilename(), candleFile.getOriginalFilename());
