@@ -12,7 +12,7 @@ __Состав:__
 - Сорокина Апполинария - ML
 
 
-__Презентация:__  [click](https://github.com/viktorgezz/HSExFINAM-HACK/blob/main/finame-hack-wonderful.pdf)
+__Презентация:__  [click](https://github.com/danlylacov/HSExFINAM-HACK/blob/main/finame-hack-wonderful.pdf)
 
 
 ### Обзор монорепозитория
