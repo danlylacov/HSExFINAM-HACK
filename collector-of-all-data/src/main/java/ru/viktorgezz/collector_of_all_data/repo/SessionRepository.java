@@ -1,7 +1,5 @@
 package ru.viktorgezz.collector_of_all_data.repo;
 
-
-
 import org.springframework.stereotype.Repository;
 import ru.viktorgezz.collector_of_all_data.model.ProcessingSession;
 
